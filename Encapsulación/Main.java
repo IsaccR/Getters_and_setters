@@ -44,7 +44,7 @@ public class Main {
 	        System.out.println("Stock actual: " + p1.getStock());
 	        
 	        
-	        System.out.println("\nIntentando vender 30 unidades (más del stock)...");
+	        System.out.println("Intentando vender 30 unidades (más del stock)...");
 	        p1.vender(30);
 	 
 	    
@@ -73,9 +73,17 @@ public class Main {
 	        
 	    
 	        
-	        System.out.println("Curso: " + miCurso.getNombreCurso());
+	        System.out.println("\nCurso: " + miCurso.getNombreCurso());
 	        System.out.println("Promedio final: " + miCurso.promedio());
 	        System.out.println("Estado: " + miCurso.estado());
+	
+	        
+	     // Termómetro 
+	        
+	        System.out.println("\nTermómetro");
+	        Termometro term = new Termometro();
+	        term.setCelsius(25.0);
+	        System.out.println("Grados Fahrenheit: " + term.getFahrenheit());
 	 }
 
 }
