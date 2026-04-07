@@ -84,6 +84,27 @@ public class Main {
 	        Termometro term = new Termometro();
 	        term.setCelsius(25.0);
 	        System.out.println("Grados Fahrenheit: " + term.getFahrenheit());
+	
+	     //  estudiante
+	        Estudiante est1 = new Estudiante();
+
+	       
+	        est1.setNombre("Isaac");
+	        est1.setPromedio(88.5); 
+
+	       
+	        System.out.println("\nDatos del Estudiante ");
+	        System.out.println("Nombre: " + est1.getNombre());
+	        
+	        System.out.println("Promedio: " + String.format("%.2f", est1.getPromedio()));
+
+	        
+	        if (est1.esBecado()) {
+	            System.out.println("Resultado: El estudiante TIENE BECA.");
+	        } else {
+	            System.out.println("Resultado: No aplica para beca.");
+	        }
+	 
 	 }
 
 }
