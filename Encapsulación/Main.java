@@ -13,6 +13,39 @@ public class Main {
 	        
 	        System.out.println("Nombre: " + p.getNombre() + " | Edad: " + p.getEdad());
 	        System.out.println();
+	        
+	        
+	        //Producto 
+	     
+	        System.out.println("Producto");
+	        
+	        
+	        Producto p1 = new Producto();
+	        
+	       
+	        p1.setCodigo("PROD-001");
+	        p1.setNombre("Arroz 1kg");
+	        
+	       
+	        p1.setPrecio(16); 
+	        p1.setPrecio(15.50);  
+	        
+	        
+	        p1.setStock(20);
+	        
+	        
+	        System.out.println("Realizando venta de 5 unidades...");
+	        p1.vender(5); 
+	        
+	        
+	        System.out.println("Código: " + p1.getCodigo());
+	        System.out.println("Producto: " + p1.getNombre());
+	        System.out.println("Precio final: Q" + p1.getPrecio());
+	        System.out.println("Stock actual: " + p1.getStock());
+	        
+	        
+	        System.out.println("\nIntentando vender 30 unidades (más del stock)...");
+	        p1.vender(30);
 	 }
 
 }
