@@ -61,6 +61,21 @@ public class Main {
 	        
 	        Cuenta.retirar(50.0, 0000);
 	 
+	     // Curso y Calificaciones 
+	        
+	        
+	        CursosYCalificaciones miCurso = new CursosYCalificaciones();
+	        miCurso.setNombreCurso("Programación ");
+	        
+	        miCurso.setNota1(88);
+	        miCurso.setNota2(55);
+	        miCurso.setNota3(80);
+	        
+	    
+	        
+	        System.out.println("Curso: " + miCurso.getNombreCurso());
+	        System.out.println("Promedio final: " + miCurso.promedio());
+	        System.out.println("Estado: " + miCurso.estado());
 	 }
 
 }
