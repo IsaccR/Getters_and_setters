@@ -46,6 +46,21 @@ public class Main {
 	        
 	        System.out.println("\nIntentando vender 30 unidades (más del stock)...");
 	        p1.vender(30);
+	 
+	    
+	        // Cuenta 
+	        
+	        System.out.println("\nCuenta");
+	        
+	        
+	        Cuenta Cuenta = new Cuenta("Isaac", 500.0, 1234);
+	        
+	        
+	        Cuenta.retirar(100.0, 1234); 
+	        
+	        
+	        Cuenta.retirar(50.0, 0000);
+	 
 	 }
 
 }
