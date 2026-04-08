@@ -164,6 +164,21 @@ public class Main {
 	        j1.actualizarPuntaje(-10);
 	        
 	 
+	     //  Factura con Total 
+	        System.out.println("\n Generando Factura");
+	        Factura miFactura = new Factura();
+	        
+	        miFactura.setCodigoFactura("FAC-001");
+	        miFactura.setDescripcion("Monitor Gamer 24\"");
+	        miFactura.setCantidad(2);
+	        miFactura.setPrecioUnitario(1250.00);
+
+	        
+	        miFactura.mostrarFactura();
+
+	        
+	        System.out.println("\nIntentando poner precio negativo...");
+	        miFactura.setPrecioUnitario(-50.0);
 	 }
 
 }
