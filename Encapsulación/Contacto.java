@@ -1,0 +1,40 @@
+package Encapsulación;
+
+public class Contacto {
+	
+	private String nombre;
+    private String telefono;
+    private String email;
+
+    
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    
+    public void setTelefono(String telefono) {
+        if (telefono.length() == 8) {
+            this.telefono = telefono;
+        } else {
+            System.out.println("Error: El teléfono debe tener exactamente 8 dígitos.");
+        }
+    }
+
+    
+    public void setEmail(String email) {
+        if (email.contains("@")) {
+            this.email = email;
+        } else {
+            System.out.println("Error: El email debe contener un carácter '@'.");
+        }
+    }
+
+    
+    public void mostrarContacto() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Teléfono: " + (telefono != null ? telefono : "No asignado"));
+        System.out.println("Email: " + (email != null ? email : "No asignado"));
+    }
+}
+
+

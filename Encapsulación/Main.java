@@ -121,6 +121,28 @@ public class Main {
 	        
 	        System.out.println("Hora final: " + miReloj.mostrarHora());  
 	        
+	     // Contacto con Teléfono 
+	        
+	        System.out.println("\nRegistro de Contacto ");
+	        Contacto miContacto = new Contacto();
+	        
+	        miContacto.setNombre("Isaac");
+	        
+	        
+	        miContacto.setTelefono("12345"); 
+	        
+	        
+	        System.out.println("Intentando poner email sin @...");
+	        miContacto.setEmail("correo-falso.com");
+
+	       
+	        miContacto.setTelefono("55443322");
+	        miContacto.setEmail("isaac@correo.com");
+
+	        System.out.println("Datos finales del contacto:");
+	        miContacto.mostrarContacto();
+	 
+	 
 	 }
 
 }
