@@ -105,6 +105,22 @@ public class Main {
 	            System.out.println("Resultado: No aplica para beca.");
 	        }
 	 
+	     // Reloj 
+	        System.out.println("\n--- Prueba de Reloj ---");
+	        Reloj miReloj = new Reloj();
+
+	        
+	        miReloj.setHora(10);
+	        miReloj.setMinuto(5);
+	        miReloj.setSegundo(30);
+	        System.out.println("Hora actual: " + miReloj.mostrarHora()); 
+
+	        
+	        System.out.println("Intentando poner 25 horas...");
+	        miReloj.setHora(25); 
+	        
+	        System.out.println("Hora final: " + miReloj.mostrarHora());  
+	        
 	 }
 
 }
