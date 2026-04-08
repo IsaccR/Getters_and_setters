@@ -141,7 +141,28 @@ public class Main {
 
 	        System.out.println("Datos finales del contacto:");
 	        miContacto.mostrarContacto();
-	 
+	
+	        
+	     // Juego con Puntaje Máximo 
+	        
+	        System.out.println("\nEstado del Jugador");
+	        Jugador j1 = new Jugador("Isaac");
+
+	        
+	        j1.actualizarPuntaje(50);
+	        System.out.println("Puntaje Actual: " + j1.getPuntajeActual() + " | Récord: " + j1.getPuntajeMaximo());
+
+	        
+	        j1.actualizarPuntaje(120);
+	        System.out.println("Puntaje Actual: " + j1.getPuntajeActual() + " | Récord: " + j1.getPuntajeMaximo());
+
+	        
+	        j1.actualizarPuntaje(30);
+	        System.out.println("Puntaje Actual: " + j1.getPuntajeActual() + " | Récord: " + j1.getPuntajeMaximo());
+
+	       
+	        j1.actualizarPuntaje(-10);
+	        
 	 
 	 }
 
